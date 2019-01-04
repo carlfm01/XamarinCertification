@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController" storyboardIdentifier="ViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="220" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="653" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="221" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="82" y="651" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="222" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="695" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.9" minValue="0.0" maxValue="1" id="223" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="82" y="690" width="312" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="224" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="OpenAboutButton">
+                                <rect key="frame" x="172" y="652" width="222" height="30"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.2196078431372549" green="0.99215686274509807" blue="0.2196078431372549" alpha="1"/>
+                                <state key="normal" title="Open about"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="2546" firstItem="220" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="2549" firstItem="wfy-db-euE" firstAttribute="top" secondItem="220" secondAttribute="bottom" constant="62"/>
+                            <constraint id="2556" firstItem="224" firstAttribute="leading" secondItem="221" secondAttribute="trailing" constant="41"/>
+                            <constraint id="2557" firstItem="221" firstAttribute="leading" secondItem="220" secondAttribute="leading" constant="62"/>
+                            <constraint id="2558" firstItem="wfy-db-euE" firstAttribute="top" secondItem="221" secondAttribute="bottom" constant="54"/>
+                            <constraint id="2559" firstItem="221" firstAttribute="leading" secondItem="220" secondAttribute="trailing" constant="20"/>
+                            <constraint id="2560" firstItem="220" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="2561" firstItem="wfy-db-euE" firstAttribute="top" secondItem="220" secondAttribute="bottom" constant="62"/>
+                            <constraint id="2562" firstItem="wfy-db-euE" firstAttribute="top" secondItem="224" secondAttribute="bottom" constant="54"/>
+                            <constraint id="2563" firstItem="224" firstAttribute="leading" secondItem="221" secondAttribute="trailing" constant="41"/>
+                            <constraint id="2564" firstItem="224" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin"/>
+                            <constraint id="2580" firstAttribute="trailingMargin" secondItem="223" secondAttribute="trailing" constant="2"/>
+                            <constraint id="2581" firstItem="223" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64"/>
+                            <constraint id="2582" firstItem="wfy-db-euE" firstAttribute="top" secondItem="223" secondAttribute="bottom" constant="16"/>
+                            <constraint id="2583" firstItem="wfy-db-euE" firstAttribute="top" secondItem="222" secondAttribute="bottom" constant="20"/>
+                            <constraint id="2584" firstItem="223" firstAttribute="trailing" secondItem="222" secondAttribute="trailing" constant="330"/>
+                            <constraint id="2585" firstItem="222" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="2859" firstItem="220" firstAttribute="top" secondItem="221" secondAttribute="top" constant="2"/>
+                            <constraint id="2860" firstItem="220" firstAttribute="top" secondItem="221" secondAttribute="top" constant="2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="OpenAboutButton" destination="224" id="name-outlet-224"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
