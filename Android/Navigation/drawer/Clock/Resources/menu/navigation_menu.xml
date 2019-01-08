@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<group android:checkableBehavior="single">
+	    <item
+    	    android:id="@+id/timeMenuItem"
+        	android:icon="@drawable/ic_access_time_white_24dp"
+        	android:title="Time"
+			android:checked="true"/>
+    	<item
+        	android:id="@+id/stopwatchMenuItem"
+      	 	android:icon="@drawable/ic_timer_white_24dp"
+        	android:title="Stopwatch"/>
+	    <item
+    	    android:id="@+id/aboutMenuItem"
+        	android:icon="@drawable/ic_info_outline_white_24dp"
+        	android:title="About"/>
+	</group>
+</menu>
